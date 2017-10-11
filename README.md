@@ -5,7 +5,7 @@ Developped @ IUT Bordeaux Montaigne
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/[my-github-repo]/fork )
+1. Fork it ( https://github.com/next-time/core/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
@@ -14,7 +14,4 @@ Developped @ IUT Bordeaux Montaigne
 
 ## License
 
-See `LICENSE`, which applies to everything in this repository except the copy
-of the CMU Pronouncing Dictionary, which is used under the terms of their
-license (included in the header of the file), and the data from Vitz and
-Winkler, for which I claim fair use.
+No license, under copyright.
