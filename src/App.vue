@@ -5,15 +5,11 @@
     <div>
       <button @click="setLang(lang)" v-for="lang in locales" :disabled="isLang(lang)">{{ $t('locales.'+ lang) }}</button>
     </div>
-    <Countdown date="December 2, 2017"></Countdown>
   </div>
 </template>
 
 <script>
-import Countdown from './components/Countdown.vue';
-
 export default {
-  components: { Countdown },
 }
 </script>
 
