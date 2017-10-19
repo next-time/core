@@ -4,6 +4,7 @@ messages:
 buttons:
   home: Accueil
   hello: Bonjour
+  counter: Compteur
 locales:
   fr: Français
   en: Anglais

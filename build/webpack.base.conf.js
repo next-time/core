@@ -77,7 +77,6 @@ module.exports = {
   },
   stylus: {
     use: [
-      require('jeet')(),
       require('rupture')()
     ],
     import: [

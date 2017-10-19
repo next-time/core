@@ -4,6 +4,7 @@ messages:
 buttons:
   home: Home
   hello: Hello
+  counter: Counter
 locales:
   fr: French
   en: English
