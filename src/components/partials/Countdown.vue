@@ -2,19 +2,19 @@
   <div id="counterdown">
     <div>
       <p>{{ days | two_digits }}</p>
-      <p>Days</p>
+      <p>{{ $t('counter.days') }}</p>
     </div>
     <div>
       <p>{{ hours | two_digits }}</p>
-      <p>Hours</p>
+      <p>{{ $t('counter.hours') }}</p>
     </div>
     <div>
       <p>{{ minutes | two_digits }}</p>
-      <p>Minutes</p>
+      <p>{{ $t('counter.minutes') }}</p>
     </div>
     <div>
       <p>{{ seconds | two_digits }}</p>
-      <p>Seconds</p>
+      <p>{{ $t('counter.seconds') }}</p>
     </div>
   </div>
 </template>

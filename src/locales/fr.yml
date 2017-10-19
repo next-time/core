@@ -8,3 +8,8 @@ buttons:
 locales:
   fr: Français
   en: Anglais
+counter:
+  days: jours
+  hours: heures
+  minutes: minutes
+  seconds: secondes
