@@ -28,7 +28,7 @@ html
   border 12px solid transparent
   border-right-width 14px
   border-left-width 14px
-  border-image url(assets/img/border.svg) 1% repeat
+  border-image url(assets/img/border.svg) 1% stretch
   top 0
   left 0
   right 0
