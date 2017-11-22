@@ -1,7 +1,21 @@
 # Next Time - CORE
+
 Next time project is a counter-down, which indicate next time of things (like next season, next christmas or next new-year).
 Developped @ IUT Bordeaux Montaigne
 
+## Development
+
+Use `npm run dev` under development
+
+## Preprod
+
+Don't forget to `npm i serve -g` once.
+Before set in production, use `npm run preprod` to check if everything works good.
+
+## Production
+
+Don't forget to `npm i vcg -g` once.
+To set in production with GH-pages, use `vcg -m "YOUR COMMIT MESSAGE"`.
 
 ## Contributing
 
