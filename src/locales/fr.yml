@@ -1,5 +1,5 @@
 messages:
-  welcome: Bienvenue sur votre application Bourgeon !
+  welcome: Compteur d'évenements
   hello: Bonjour {name} !
 buttons:
   home: Accueil
@@ -9,7 +9,8 @@ locales:
   fr: Français
   en: Anglais
 counter:
-  days: jours
-  hours: heures
-  minutes: minutes
-  seconds: secondes
+  days: j
+  hours: h
+  minutes: m
+  seconds: s
+about: We are a group of students in Multimedia and Internet, based in Bordeaux and we have made others cool projects. If you want to see more about our work, follow this link.

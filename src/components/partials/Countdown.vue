@@ -1,21 +1,15 @@
 <template>
   <div id="counterdown">
-    <div>
-      <p>{{ days | two_digits }}</p>
-      <p>{{ $t('counter.days') }}</p>
-    </div>
-    <div>
-      <p>{{ hours | two_digits }}</p>
-      <p>{{ $t('counter.hours') }}</p>
-    </div>
-    <div>
-      <p>{{ minutes | two_digits }}</p>
-      <p>{{ $t('counter.minutes') }}</p>
-    </div>
-    <div>
-      <p>{{ seconds | two_digits }}</p>
-      <p>{{ $t('counter.seconds') }}</p>
-    </div>
+    <p>
+      <b>{{ days | two_digits }}</b>
+      <em>{{ $t('counter.days') }}</em>
+      <b>{{ hours | two_digits }}</b>
+      <em>{{ $t('counter.hours') }}</em>
+      <b>{{ minutes | two_digits }}</b>
+      <em>{{ $t('counter.minutes') }}</em>
+      <b>{{ seconds | two_digits }}</b>
+      <em>{{ $t('counter.seconds') }}</em>
+    </p>
   </div>
 </template>
 
@@ -61,3 +55,21 @@ export default {
 
 }
 </script>
+
+<style lang="stylus" scoped>
+#counterdown
+  margin-top 2em
+  p
+    color #FFD2CA
+  em
+    font-family vision
+    font-weight 100
+    margin-right .7em
+    font-size 2.25em
+  b
+    font-family vision
+    font-weight 900
+    margin-right .1em
+    font-size 4em
+
+</style>

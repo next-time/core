@@ -1,5 +1,5 @@
 messages:
-  welcome: Welcome to your Bourgeon app!
+  welcome: Counter of events
   hello: Hello {name}!
 buttons:
   home: Home
@@ -9,7 +9,8 @@ locales:
   fr: French
   en: English
 counter:
-  days: days
-  hours: hours
-  minutes: minutes
-  seconds: seconds
+  days: d
+  hours: h
+  minutes: m
+  seconds: s
+about: We are a group of students in Multimedia and Internet, based in Bordeaux and we have made others cool projects. If you want to see more about our work, follow this link.

@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Bourgeon from 'bourgeon'
 import App from './App'
+import Header from './Header'
 
 Vue.use(Bourgeon, {
   locales: ['fr', 'en']
@@ -21,3 +22,7 @@ Vue.filter('two_digits', (value) => {
 new Vue({
   render: h => h(App)
 }).$mount('#app')
+
+new Vue({
+  render: h => h(Header)
+}).$mount('header')

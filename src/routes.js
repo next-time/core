@@ -1,5 +1,5 @@
 import WelcomeComponent from 'components/Welcome'
-import HelloComponent from 'components/Hello'
+import AboutComponent from 'components/About'
 import SampleComponent from 'components/Sample'
 
 export default [
@@ -8,8 +8,8 @@ export default [
     component: WelcomeComponent
   },
   {
-    path: '/hello/:name',
-    component: HelloComponent
+    path: '/about',
+    component: AboutComponent
   },
   {
     path: '/sample',

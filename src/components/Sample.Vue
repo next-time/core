@@ -1,7 +1,6 @@
 <template>
-  <div class="sample">
+  <div>
     <Countdown date="December 2, 2017"></Countdown>
-    <p><router-link to="/">{{ $t('buttons.home') }}</router-link></p>
   </div>
 </template>
 
