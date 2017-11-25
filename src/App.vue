@@ -19,6 +19,9 @@ html
   +below(600px)
     font-size .8em
 
+body
+  overflow hidden
+
 #app
   text-align center
 
