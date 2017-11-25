@@ -67,9 +67,11 @@ export default {
     margin-right .7em
     font-size 2.25em
   b
+    display inline-block
     font-family vision
     font-weight 900
-    margin-right .1em
     font-size 4em
+    min-width 74px
+    margin-right .1em
 
 </style>
