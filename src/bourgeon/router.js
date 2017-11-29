@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import VueRouter from 'vue-router'
 import routes from 'src/routes'
+import meta from 'src/meta.json'
 
 export default {
   router: null,
@@ -16,6 +17,15 @@ export default {
           this.$options.router = router
         }
       }
+    })
+
+    router.beforeEach((to, from, next) => {
+      if (to.meta.title == null) {
+        document.title = meta.title
+      } else {
+        document.title = to.meta.title + ' | ' + meta.title
+      }
+      next()
     })
 
     Vue.use(VueRouter)

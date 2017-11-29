@@ -9,10 +9,16 @@ export default [
   },
   {
     path: '/about',
-    component: AboutComponent
+    component: AboutComponent,
+    meta: {
+      title: 'About'
+    }
   },
   {
     path: '/sample',
-    component: SampleComponent
+    component: SampleComponent,
+    meta: {
+      title: 'Sample'
+    }
   }
 ]
