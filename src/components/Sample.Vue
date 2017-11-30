@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Countdown date="December 2, 2017"></Countdown>
+    <Countdown date="December 2, 2017" until="Sample"></Countdown>
   </div>
 </template>
 

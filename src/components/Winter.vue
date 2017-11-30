@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Countdown date="December 21, 2017"></Countdown>
+    <Countdown date="December 21, 2017" until="Winter"></Countdown>
     <div id="animation">
       <svg id="mountains" xmlns="http://www.w3.org/2000/svg"	xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1925 1194.91">
         <g id="Montagne_7" data-name="Montagne 7">

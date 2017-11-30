@@ -10,6 +10,10 @@
       <b>{{ seconds | two_digits }}</b>
       <em>{{ $t('counter.seconds') }}</em>
     </p>
+    <div id="until">
+      <em>Until</em>
+      <b>{{ this.until }}</b>
+    </div>
   </div>
 </template>
 
@@ -25,6 +29,9 @@ export default {
 
   props: {
     date: {
+      type: String
+    },
+    until: {
       type: String
     }
   },
@@ -59,19 +66,40 @@ export default {
 <style lang="stylus" scoped>
 #counterdown
   margin-top 2em
+  color #FFD2CA
   p
     color #FFD2CA
-  em
-    font-family vision
-    font-weight 100
-    margin-right .7em
-    font-size 2.25em
-  b
-    display inline-block
-    font-family vision
-    font-weight 900
-    font-size 4em
-    min-width 74px
-    margin-right .1em
+    em
+      font-family vision
+      font-weight 100
+      margin-right .7em
+      font-size 2.25em
+    b
+      display inline-block
+      font-family vision
+      font-weight 900
+      font-size 4em
+      min-width 74px
+      margin-right .1em
+  #until
+    display block
+    width 55%
+    text-align left
+    margin 1.5em auto 0
+    em
+      font-family vision
+      font-weight 100
+      margin-right .7em
+      font-size 2em
+      display block
+      font-style italic
+    b
+      display inline-block
+      font-family vision
+      font-weight 700
+      font-size 3.5em
+      min-width 74px
+      margin-right .1em
+      transform translate(28%, -30%)
 
 </style>
