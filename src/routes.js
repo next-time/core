@@ -1,6 +1,7 @@
 import WelcomeComponent from 'components/Welcome'
 import AboutComponent from 'components/About'
 import SampleComponent from 'components/Sample'
+import WinterComponent from 'components/Winter'
 
 export default [
   {
@@ -19,6 +20,13 @@ export default [
     component: SampleComponent,
     meta: {
       title: 'Sample'
+    }
+  },
+  {
+    path: '/season/winter',
+    component: WinterComponent,
+    meta: {
+      title: 'Season - Winter'
     }
   }
 ]

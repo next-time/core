@@ -1,9 +1,12 @@
 <template>
-  <div id="container">
-    <router-link to="/sample" class="bubble blue"></router-link>
-    <router-link to="/sample" class="bubble red"></router-link>
-    <router-link to="/sample" class="bubble yellow"></router-link>
-  </div>
+  <section>
+    <h2 id="baseline">{{ $t('messages.welcome') }}</h2>
+    <div id="container">
+      <router-link to="/sample" class="bubble blue"></router-link>
+      <router-link to="/sample" class="bubble red"></router-link>
+      <router-link to="/sample" class="bubble yellow"></router-link>
+    </div>
+  </section>
 </template>
 
 <script>
@@ -11,6 +14,12 @@ export default {}
 </script>
 
 <style lang='stylus' scoped>
+  #baseline
+    text-align center
+    margin-top 2.6em
+    font-size 24px
+    font-family vision
+    font-weight 400
   #container
     +below(750px)
       display flex

@@ -6,7 +6,6 @@
         <b>next time</b>
       </h1>
     </router-link>
-    <h2 id="baseline">{{ $t('messages.welcome') }}</h2>
     <nav>
       <ul>
         <li><router-link to="/about">about</router-link></li>
@@ -44,12 +43,6 @@ header
     display inline-block
     transform translate(-0.2em, 0.5em)
     letter-spacing -0.45px
-#baseline
-  text-align center
-  margin-top 2.6em
-  font-size 24px
-  font-family vision
-  font-weight 400
 nav
   font-family vision
   list-style none
