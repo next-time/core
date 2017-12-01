@@ -1357,7 +1357,6 @@ export default {
     height 12vh
     position absolute
     z-index -1
-    transform translateY(40%)
     .st0
       opacity 0.9
       fill #FFFFFF
@@ -1375,6 +1374,7 @@ export default {
     z-index -2
     transform translate(-50%, 10%)
     left 50%
+    bottom 10vh
     .cls-1
       fill #d3b497
     .cls-2
