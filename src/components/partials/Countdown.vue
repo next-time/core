@@ -67,6 +67,12 @@ export default {
 #counterdown
   margin-top 2em
   color #FFD2CA
+  +below(1200px)
+    font-size .6em
+  +below(900px)
+    margin-top 3.5em
+  +below(700px)
+    font-size .3em
   p
     color #FFD2CA
     em
@@ -74,6 +80,8 @@ export default {
       font-weight 100
       margin-right .7em
       font-size 2.25em
+      +below(700px)
+        margin-right .6em
     b
       display inline-block
       font-family vision
@@ -81,6 +89,9 @@ export default {
       font-size 4em
       min-width 74px
       margin-right .1em
+      +below(700px)
+        margin-right .2em
+        min-width 0
   #until
     display block
     width 55%

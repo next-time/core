@@ -39,6 +39,8 @@ export default {
   top 50%
   left 50%
   transform translate(-50%, -50%)
+  +below(900px)
+    width inherit
   p
     letter-spacing .13em
     font-family vision
@@ -51,4 +53,6 @@ export default {
   border-radius 100%
   right -10%
   top -50%
+  +below(900px)
+    display none
 </style>

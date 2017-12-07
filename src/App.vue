@@ -13,14 +13,12 @@ export default {
 <style lang="stylus">
 @import "styles/theme"
 
-html
+body
+  overflow hidden
   +below(750px)
     font-size .9em
   +below(600px)
-    font-size .8em
-
-body
-  overflow hidden
+    font-size .3em
 
 #app
   text-align center

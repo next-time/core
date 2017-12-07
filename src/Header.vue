@@ -8,7 +8,7 @@
     </router-link>
     <nav>
       <ul>
-        <li><router-link to="/about">about</router-link></li>
+        <li><router-link to="/about" :class="{ active: about }">about</router-link></li>
         <li><a href="#">contact</a></li>
       </ul>
     </nav>
@@ -25,6 +25,10 @@ export default {
 
 header
   padding-top 2.25em
+  +below(750px)
+    font-size .7em
+  +below(600px)
+    font-size .6em
 #logo
   text-align center
   font-family vision
@@ -54,6 +58,7 @@ nav
     display inline-block
     &:last-child
       margin-left 1em
+
   a
     color black
     letter-spacing 1.11px
@@ -69,4 +74,7 @@ nav
       transition width 300ms ease-in-out
     &:hover::after
       width 100%
+    &.router-link-exact-active
+      &:after
+        width 100%
 </style>

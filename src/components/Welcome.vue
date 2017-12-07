@@ -17,16 +17,16 @@ export default {}
   #baseline
     text-align center
     margin-top 2.6em
-    font-size 24px
+    font-size 1.8em
     font-family vision
     font-weight 400
+    +below(1200px)
+      font-size .7em
   #container
     +below(750px)
-      display flex
+      display block
       width 85%
       margin 2em auto 0
-      flex-wrap wrap
-      justify-content space-around
 
   .bubble
     position relative
@@ -48,9 +48,15 @@ export default {}
       background-color #FCE3DF
     &.yellow
       background-color #FCEED3
-    +below(750px)
-      margin 0!important
+    +below(800px)
+      margin-top 2em
+    +below(650px, orientation: portrait)
+      margin 2em auto!important
       width 30vw
       height 30vw
+      display block
+    +below(340px, orientation: portrait)
+      width 25vw
+      height 25vw
 
 </style>
