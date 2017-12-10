@@ -4,7 +4,7 @@ import App from './App'
 import Header from './Header'
 
 Vue.use(Bourgeon, {
-  locales: ['fr', 'en']
+  locales: ['en', 'fr']
 })
 
 // Filters
