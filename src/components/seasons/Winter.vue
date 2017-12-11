@@ -158,16 +158,15 @@ export default {
     mountainSnow: function () {
       anime({
         targets: '#main #mountains .snow',
-        duration: anime.random(1200, 3200),
-        delay: anime.random(500, 1200),
-        easing: 'easeInExpo',
+        duration: 2000,
+        easing: 'easeInOutQuart',
         opacity: 1
       })
     },
     freezeLake: function () {
       anime({
         targets: '#main #lake #freeze',
-        duration: 3800,
+        duration: 2900,
         delay: 1000,
         easing: 'easeInExpo',
         opacity: 1
