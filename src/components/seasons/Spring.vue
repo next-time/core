@@ -71,7 +71,7 @@
 </template>
 
 <script>
-import Countdown from '../components/partials/Countdown.vue';
+import Countdown from '../partials/Countdown.vue';
 
 export default {
   components: { Countdown },

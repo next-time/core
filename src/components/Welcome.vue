@@ -2,8 +2,8 @@
   <section>
     <h2 id="baseline">{{ $t('messages.welcome') }}</h2>
     <div id="container">
-      <router-link to="/sample" class="bubble blue"></router-link>
-      <router-link to="/sample" class="bubble red"></router-link>
+      <router-link to="/season/winter" class="bubble blue"></router-link>
+      <router-link to="/season/spring" class="bubble red"></router-link>
       <router-link to="/sample" class="bubble yellow"></router-link>
     </div>
   </section>

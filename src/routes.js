@@ -1,8 +1,8 @@
-import WelcomeComponent from 'components/Welcome'
-import AboutComponent from 'components/About'
-import SampleComponent from 'components/Sample'
-import WinterComponent from 'components/Winter'
-import SpringComponent from 'components/Spring'
+import WelcomeComponent from './components/Welcome'
+import AboutComponent from './components/About'
+import SampleComponent from './components/Sample'
+import WinterComponent from './components/seasons/Winter'
+import SpringComponent from './components/seasons/Spring'
 
 export default [
   {
