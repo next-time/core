@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Countdown date="March 20, 2018" until="Spring"></Countdown>
+    <Countdown date="March 20, 2018" until="Spring" color="#fed2cb"></Countdown>
     <div id="animation">
       <svg version="1.1" id="main" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
       	 viewBox="0 0 301.6 553.6" style="enable-background:new 0 0 301.6 553.6;" xml:space="preserve">
@@ -139,7 +139,7 @@ export default {
     pot: function () {
       anime({
         targets: '#main',
-        bottom: ['5vh', '15vh'],
+        bottom: ['5vh', '12vh'],
         delay: 4200,
         duration: 1800
       })

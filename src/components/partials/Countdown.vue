@@ -1,5 +1,5 @@
 <template>
-  <div id="counterdown">
+  <div id="counterdown" :style="{color: color}">
     <p>
       <b>{{ days | two_digits }}</b>
       <em>{{ $t('counter.days') }}</em>
@@ -32,6 +32,9 @@ export default {
       type: String
     },
     until: {
+      type: String
+    },
+    color: {
       type: String
     }
   },
@@ -66,7 +69,6 @@ export default {
 <style lang="stylus" scoped>
 #counterdown
   margin-top 2em
-  color #FFD2CA
   +below(1200px)
     font-size .6em
   +below(900px)
@@ -74,7 +76,6 @@ export default {
   +below(700px)
     font-size .3em
   p
-    color #FFD2CA
     em
       font-family vision
       font-weight 100
