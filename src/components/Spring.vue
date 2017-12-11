@@ -171,7 +171,7 @@ export default {
   #main
     height 50%
     #leaf
-      transform-origin 0% 50%
+      transform-origin 0.01% 50%
       .main
         fill #B5EAC2
         stroke #B66A5C
