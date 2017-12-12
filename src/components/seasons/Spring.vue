@@ -194,20 +194,22 @@ export default {
           targets: '#droplet',
           top: ['-10vh', '78vh'],
           duration: function (el, i) {
-            return anime.random(20*i, 24*i) *25
+            return (anime.random(20*i, 25*i) *25) + 200
           },
           left: function (el, i) {
             let p = anime.random(45, 55) + '%'
             console.log(p)
             return [p, p]
           },
-          delay: 300,
-          easing: 'easeInExpo'
+          delay: function (el, i) {
+            return (anime.random(10*i, 15*i) *25) + 200
+          },
+          easing: 'easeOutQuart'
         })
         anime({
           targets: '#droplet',
           opacity: [1, 0],
-          delay: 2000,
+          delay: 3900,
           duration: 300,
         })
       }
