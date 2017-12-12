@@ -159,35 +159,58 @@ export default {
       let d = 7
       for (let i = 0; i < d-1; i++) {
         document
-          .getElementById('animation')
+          .getElementById('droplets')
           .appendChild(
             document.getElementById('droplet')
             .cloneNode(true)
           )
       }
-      anime({
-        targets: '#droplet',
-        rotate: [0, 20],
-        left: ['57%', '53%'],
-        translateX: function (el, i) {
-          return anime.random(-10*i, 0)
-        },
-        bottom: ['52vh', '15vh'],
-        duration: 1200,
-        delay: function (el, i) {
-          return 500 + (200*i)
-        },
-        easing: 'easeInExpo'
-      })
-      anime({
-        targets: '#droplet',
-        opacity: [0, 1],
-        delay: function (el, i) {
-          return 1400 + (200*i)
-        },
-        duration: 1200,
-        direction: 'alternate'
-      })
+      if (window.innerWidth > 1000) {
+        anime({
+          targets: '#droplet',
+          rotate: [0, 20],
+          left: ['57%', '53%'],
+          translateX: function (el, i) {
+            return anime.random(-10*i, 0)
+          },
+          bottom: ['52vh', '15vh'],
+          duration: 1200,
+          delay: function (el, i) {
+            return 500 + (200*i)
+          },
+          easing: 'easeInExpo'
+        })
+        anime({
+          targets: '#droplet',
+          opacity: [0, 1],
+          delay: function (el, i) {
+            return 1400 + (200*i)
+          },
+          duration: 1200,
+          direction: 'alternate'
+        })
+      } else {
+        anime({
+          targets: '#droplet',
+          top: ['-10vh', '78vh'],
+          duration: function (el, i) {
+            return anime.random(20*i, 24*i) *25
+          },
+          left: function (el, i) {
+            let p = anime.random(45, 55) + '%'
+            console.log(p)
+            return [p, p]
+          },
+          delay: 300,
+          easing: 'easeInExpo'
+        })
+        anime({
+          targets: '#droplet',
+          opacity: [1, 0],
+          delay: 2000,
+          duration: 300,
+        })
+      }
     }
   }
 }
@@ -252,7 +275,7 @@ export default {
     bottom 45vh
     left 55%
     transform-origin 50% 50%
-    +below(750px)
+    +below(1000px)
       display none
     .st0
       fill #C3E0FF
@@ -282,8 +305,8 @@ export default {
     bottom 49.5vh
     z-index -3
     transform-origin 50% 50%
-    +below(750px)
-      display none
+    +below(1000px)
+      width 2vw
     .st0
       opacity 0.6985
       fill #76B8FF
