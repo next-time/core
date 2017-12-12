@@ -78,8 +78,9 @@ export default {
     fill #EC497B
   #mouth
     .mouth__tang
-        transform translateX(.5px)
-        opacity 0
+      transform translateX(.5px)
+      opacity 0
     .mouth__main
-        transform-origin 50% 50%
+      transform-box fill-box
+      transform-origin 50% 50%
 </style>

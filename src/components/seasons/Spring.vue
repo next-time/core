@@ -228,6 +228,7 @@ export default {
     bottom 5vh
     #leaf
       transform-origin 0.01% 50%
+      transform-box fill-box
       .main
         fill #B5EAC2
         stroke #B66A5C
@@ -256,6 +257,7 @@ export default {
 
     #petals
       transform-origin 50% 50%
+      transform-box fill-box
       path
         fill #FFD2CA
         stroke #B66A5C
@@ -264,6 +266,7 @@ export default {
 
     #pistil
       transform-origin 50% 50%
+      transform-box fill-box
       ellipse
         fill #FFC775
         stroke #B66A5C
@@ -275,6 +278,7 @@ export default {
     bottom 45vh
     left 55%
     transform-origin 50% 50%
+    transform-box fill-box
     +below(1000px)
       display none
     .st0
@@ -305,6 +309,7 @@ export default {
     bottom 49.5vh
     z-index -3
     transform-origin 50% 50%
+    transform-box fill-box
     +below(1000px)
       width 2vw
     .st0
