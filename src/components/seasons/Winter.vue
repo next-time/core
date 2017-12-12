@@ -160,7 +160,8 @@ export default {
         targets: '#main #mountains .snow',
         duration: 2000,
         easing: 'easeInOutQuart',
-        opacity: 1
+        fill: ['rgba(181, 234, 194, .2)', 'rgba(255, 255, 255, 1)'],
+        stroke: ['rgba(60, 127, 77, 0)', 'rgba(60, 127, 77, 1)']
       })
     },
     freezeLake: function () {
@@ -216,7 +217,6 @@ export default {
         stroke-linecap round
         stroke-linejoin round
         stroke-miterlimit 10
-        opacity .2
     #lake
       .water
         fill #C3E1FF
