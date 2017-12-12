@@ -73,8 +73,10 @@ export default {
     font-size .6em
   +below(900px)
     margin-top 3.5em
-  +below(700px)
-    font-size .3em
+  +below(450px)
+    font-size .5em
+  +below(370px)
+    font-size .4em
   p
     em
       font-family vision
