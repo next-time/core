@@ -2,9 +2,15 @@
   <section>
     <h2 id="baseline">{{ $t('messages.welcome') }}</h2>
     <div id="container">
-      <router-link to="/season/winter" class="bubble blue"></router-link>
-      <router-link to="/season/spring" class="bubble red"></router-link>
-      <router-link to="/sample" class="bubble yellow"></router-link>
+      <router-link to="/season/winter" class="bubble green">
+        <img src="../assets/img/wraps/seasons/winter.svg" alt="Winter Wrap">
+      </router-link>
+      <router-link to="/season/spring" class="bubble red">
+        <img src="../assets/img/wraps/seasons/spring.svg" alt="Winter Wrap">
+      </router-link>
+      <router-link to="/sample" class="bubble blue">
+
+      </router-link>
     </div>
   </section>
 </template>
@@ -46,8 +52,15 @@ export default {}
       background-color #dcedff
     &.red
       background-color #FCE3DF
-    &.yellow
-      background-color #FCEED3
+    &.green
+      background-color #B5EAC2
+    img
+      position absolute
+      width 80%
+      max-height 80%
+      left 50%
+      top 50%
+      transform translate(-50%, -50%)
     +below(800px)
       margin-top 2em
     +below(650px, orientation: portrait)
