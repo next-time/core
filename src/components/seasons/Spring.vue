@@ -170,6 +170,12 @@ export default {
 #animation
   #main
     height 50%
+    min-width 500px
+    position absolute
+    z-index -2
+    transform translateX(-50%)
+    left 50%
+    bottom 5vh
     #leaf
       transform-origin 0.01% 50%
       .main
@@ -215,7 +221,7 @@ export default {
         stroke-miterlimit 10
   #watering-can
     position absolute
-    width 18%
+    width 25%
     bottom 45vh
     left 55%
     transform-origin 50% 50%
@@ -249,6 +255,8 @@ export default {
     bottom 49.5vh
     z-index -3
     transform-origin 50% 50%
+    +below(750px)
+      display none
     .st0
       opacity 0.6985
       fill #76B8FF
