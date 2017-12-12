@@ -69,14 +69,16 @@
         </svg>
       </div>
     </div>
+    <Face></Face>
   </div>
 </template>
 
 <script>
 import Countdown from '../partials/Countdown.vue';
+import Face from '../partials/Face.vue';
 
 export default {
-  components: { Countdown },
+  components: { Countdown, Face },
   mounted: function () {
     this.stick()
     this.petals()
@@ -142,8 +144,14 @@ export default {
       anime({
         targets: '#main',
         bottom: ['5vh', '12vh'],
-        delay: 4200,
-        duration: 1800
+        duration: 1800,
+        delay: 4200
+      })
+      anime({
+        targets: '#halo',
+        bottom: ['8vh', '15vh'],
+        duration: 1800,
+        delay: 4200
       })
     },
     droplet: function () {
@@ -286,5 +294,11 @@ export default {
       fill #9CB3CC
       fill-opacity 0.526
       enable-background new
+#halo
+  position absolute
+  left 50%
+  transform translateX(-48.5%)
+  bottom 15vh
+  height 12vh
 
 </style>
