@@ -3,6 +3,7 @@ import AboutComponent from './components/About'
 import SampleComponent from './components/Sample'
 import WinterComponent from './components/seasons/Winter'
 import SpringComponent from './components/seasons/Spring'
+import SummerComponent from './components/seasons/Summer'
 
 export default [
   {
@@ -36,5 +37,12 @@ export default [
     meta: {
       title: 'Season - Spring'
     }
-  }
+   },
+   {
+     path: '/season/summer',
+     component: SummerComponent,
+     meta: {
+       title: 'Season - Summer'
+     }
+   }
 ]

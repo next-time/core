@@ -4,7 +4,7 @@
     <div id="container">
       <router-link to="/season/winter" class="bubble blue"></router-link>
       <router-link to="/season/spring" class="bubble red"></router-link>
-      <router-link to="/sample" class="bubble yellow"></router-link>
+      <router-link to="/season/summer" class="bubble yellow"></router-link>
     </div>
   </section>
 </template>
