@@ -59,22 +59,26 @@
           c0.7,0.8,0.8,2,0.3,2.9L45.2,133C44.7,133.9,43.7,134.5,42.6,134.4z"/>
         <path class="st1" d="M128.1,189.5l-77.2-64.6l-3.7,7.8c-0.5,1-0.2,2.2,0.2,2.7l80.5,67.4L128.1,189.5z"/>
       </svg>
-      <svg version="1.1" id="droplet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-      	 viewBox="0 0 28.1 41.6" style="enable-background:new 0 0 28.1 41.6;" xml:space="preserve">
-        <path id="path2530_1_" class="st0" d="M27.4,27c0,7.7-6,14-13.4,14S0.5,34.7,0.6,27C0.8,16.7,8.1,12.5,14,0.6
-        	C20.3,12.1,27.4,19.3,27.4,27L27.4,27z"/>
-        <path class="st1" d="M14.1,0.6c5.1,11.5,8.6,18.3,8.6,26S19,40.9,12.9,40.9c0.4,0,0.8,0.1,1.2,0.1c7.4,0,13.4-6.3,13.4-14
-        	C27.4,19.3,20.3,12.1,14.1,0.6z"/>
-      </svg>
+      <div id="droplets">
+        <svg version="1.1" id="droplet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        	 viewBox="0 0 28.1 41.6" style="enable-background:new 0 0 28.1 41.6;" xml:space="preserve">
+          <path id="path2530_1_" class="st0" d="M27.4,27c0,7.7-6,14-13.4,14S0.5,34.7,0.6,27C0.8,16.7,8.1,12.5,14,0.6
+          	C20.3,12.1,27.4,19.3,27.4,27L27.4,27z"/>
+          <path class="st1" d="M14.1,0.6c5.1,11.5,8.6,18.3,8.6,26S19,40.9,12.9,40.9c0.4,0,0.8,0.1,1.2,0.1c7.4,0,13.4-6.3,13.4-14
+          	C27.4,19.3,20.3,12.1,14.1,0.6z"/>
+        </svg>
+      </div>
     </div>
+    <Face></Face>
   </div>
 </template>
 
 <script>
 import Countdown from '../partials/Countdown.vue';
+import Face from '../partials/Face.vue';
 
 export default {
-  components: { Countdown },
+  components: { Countdown, Face },
   mounted: function () {
     this.stick()
     this.petals()
@@ -115,8 +119,8 @@ export default {
       anime({
         targets: '#main #leaf',
         rotateY: ['-90deg', 0],
-        duration: 2000,
-        delay: 2800
+        duration: 2200,
+        delay: 3800
       })
     },
     wateringCan: function () {
@@ -124,43 +128,91 @@ export default {
         targets: '#watering-can',
         rotate: [3, -30],
         direction: 'alternate',
-        duration: 1250,
-        easing: 'easeInOutQuart',
-        delay: 400
+        duration: 2000,
+        easing: 'easeOutBack',
+        delay: 0
       })
       anime({
         targets: '#watering-can',
         duration: 1500,
         opacity: 0,
         easing: 'easeInExpo',
-        delay: 3200
+        delay: 3800
       })
     },
     pot: function () {
       anime({
         targets: '#main',
         bottom: ['5vh', '12vh'],
-        delay: 4200,
-        duration: 1800
+        duration: 1800,
+        delay: 4200
+      })
+      anime({
+        targets: '#halo',
+        bottom: ['8vh', '15vh'],
+        duration: 1800,
+        delay: 4200
       })
     },
     droplet: function () {
-      anime({
-        targets: '#droplet',
-        rotate: [0, 20],
-        left: ['56.5%', '53%'],
-        bottom: ['49.5vh', '15vh'],
-        duration: 1200,
-        delay: 700,
-        easing: 'easeInExpo'
-      })
-      anime({
-        targets: '#droplet',
-        opacity: [0, 1],
-        delay: 1400,
-        duration: 1200,
-        direction: 'alternate'
-      })
+      // Number of droplets
+      let d = 7
+      for (let i = 0; i < d-1; i++) {
+        document
+          .getElementById('droplets')
+          .appendChild(
+            document.getElementById('droplet')
+            .cloneNode(true)
+          )
+      }
+      if (window.innerWidth > 1000) {
+        anime({
+          targets: '#droplet',
+          rotate: [0, 20],
+          left: ['57%', '53%'],
+          translateX: function (el, i) {
+            return anime.random(-10*i, 0)
+          },
+          bottom: ['52vh', '15vh'],
+          duration: 1200,
+          delay: function (el, i) {
+            return 500 + (200*i)
+          },
+          easing: 'easeInExpo'
+        })
+        anime({
+          targets: '#droplet',
+          opacity: [0, 1],
+          delay: function (el, i) {
+            return 1400 + (200*i)
+          },
+          duration: 1200,
+          direction: 'alternate'
+        })
+      } else {
+        anime({
+          targets: '#droplet',
+          top: ['-10vh', '78vh'],
+          duration: function (el, i) {
+            return (anime.random(20*i, 25*i) *25) + 200
+          },
+          left: function (el, i) {
+            let p = anime.random(45, 55) + '%'
+            console.log(p)
+            return [p, p]
+          },
+          delay: function (el, i) {
+            return (anime.random(10*i, 15*i) *25) + 200
+          },
+          easing: 'easeOutQuart'
+        })
+        anime({
+          targets: '#droplet',
+          opacity: [1, 0],
+          delay: 3900,
+          duration: 300,
+        })
+      }
     }
   }
 }
@@ -170,8 +222,15 @@ export default {
 #animation
   #main
     height 50%
+    min-width 500px
+    position absolute
+    z-index -2
+    transform translateX(-50%)
+    left 50%
+    bottom 5vh
     #leaf
       transform-origin 0.01% 50%
+      transform-box fill-box
       .main
         fill #B5EAC2
         stroke #B66A5C
@@ -200,6 +259,7 @@ export default {
 
     #petals
       transform-origin 50% 50%
+      transform-box fill-box
       path
         fill #FFD2CA
         stroke #B66A5C
@@ -208,6 +268,7 @@ export default {
 
     #pistil
       transform-origin 50% 50%
+      transform-box fill-box
       ellipse
         fill #FFC775
         stroke #B66A5C
@@ -215,11 +276,12 @@ export default {
         stroke-miterlimit 10
   #watering-can
     position absolute
-    width 18%
+    width 25%
     bottom 45vh
     left 55%
     transform-origin 50% 50%
-    +below(750px)
+    transform-box fill-box
+    +below(1000px)
       display none
     .st0
       fill #C3E0FF
@@ -249,6 +311,9 @@ export default {
     bottom 49.5vh
     z-index -3
     transform-origin 50% 50%
+    transform-box fill-box
+    +below(1000px)
+      width 2vw
     .st0
       opacity 0.6985
       fill #76B8FF
@@ -259,5 +324,11 @@ export default {
       fill #9CB3CC
       fill-opacity 0.526
       enable-background new
+#halo
+  position absolute
+  left 50%
+  transform translateX(-48.5%)
+  bottom 15vh
+  height 12vh
 
 </style>

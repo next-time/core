@@ -132,14 +132,16 @@
         </g>
       </svg>
     </div>
+    <Face></Face>
   </div>
 </template>
 
 <script>
 import Countdown from '../partials/Countdown.vue';
+import Face from '../partials/Face.vue';
 
 export default {
-  components: { Countdown },
+  components: { Countdown, Face },
   mounted: function () {
     this.cloud()
     this.mountainSnow()
@@ -160,7 +162,8 @@ export default {
         targets: '#main #mountains .snow',
         duration: 2000,
         easing: 'easeInOutQuart',
-        opacity: 1
+        fill: ['rgba(181, 234, 194, .2)', 'rgba(255, 255, 255, 1)'],
+        stroke: ['rgba(60, 127, 77, 0)', 'rgba(60, 127, 77, 1)']
       })
     },
     freezeLake: function () {
@@ -216,7 +219,6 @@ export default {
         stroke-linecap round
         stroke-linejoin round
         stroke-miterlimit 10
-        opacity .2
     #lake
       .water
         fill #C3E1FF
@@ -228,4 +230,15 @@ export default {
       polygon,
       path
         fill #F0F8FF
+#halo
+  position absolute
+  left 50%
+  transform translate(-15%, -2vh)
+  z-index 0
+  bottom 23.3vw
+  height 5.5vw
+  min-height 55px
+  display block
+  +below(1000px)
+    bottom 233px
 </style>
