@@ -8,7 +8,7 @@
       <router-link to="/season/spring" class="bubble red">
         <img src="../assets/img/wraps/seasons/spring.svg" alt="Winter Wrap">
       </router-link>
-      <router-link to="/season/summer" class="bubble blue">
+      <router-link to="/season/summer" class="bubble yellow">
 
       </router-link>
     </div>
@@ -48,8 +48,8 @@ export default {}
       box-shadow 0 15px 15px 0 rgba(0, 0, 0, 0.06)
     &:nth-child(2)
       margin 0 4em
-    &.blue
-      background-color #dcedff
+    &.yellow
+      background-color #FCEED6;
     &.red
       background-color #FCE3DF
     &.green
