@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Countdown date="December 21, 2017" until="Winter" color="#b7e9c3"></Countdown>
+    <Countdown date="December 21, 2018" until="Winter" color="#b7e9c3"></Countdown>
     <div id="animation">
       <svg version="1.1" id="cloud" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
       	 viewBox="0 0 591.2 233.6" style="enable-background:new 0 0 591.2 233.6;" xml:space="preserve">
