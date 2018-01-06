@@ -8,9 +8,7 @@
       <router-link to="/season/spring" class="bubble red">
         <img src="../assets/img/wraps/seasons/spring.svg" alt="Winter Wrap">
       </router-link>
-      <router-link to="/season/summer" class="bubble yellow">
-
-      </router-link>
+      <!-- <router-link to="/season/summer" class="bubble yellow"></router-link> -->
     </div>
   </section>
 </template>
