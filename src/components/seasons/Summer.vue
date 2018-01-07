@@ -112,7 +112,7 @@
         		C65.5,323.9,65.1,321.9,64.5,319.9z"/>
         </g>
         <g id="reservoir">
-        	<path class="st5" d="M151.1,154.1c32.8-4.1,65.9-4,98.7,0.2c11.7,1.5,23.5,3.6,35.3,2.8c10.2-0.7,20.2-3.6,30.5-4
+        	<path class="st5" id="water" d="M151.1,154.1c32.8-4.1,65.9-4,98.7,0.2c11.7,1.5,23.5,3.6,35.3,2.8c10.2-0.7,20.2-3.6,30.5-4
         		c20-0.9,39.3,7.5,59.3,9.3c21.6,1.9,44-9.7,65.2-5.2c10.4,2.2,19.5,0.2,29.9-2c4.2,107.4-71.6,181.1-160,181.1
         		c-114.4-8.5-160-78.2-160-181.1"/>
         	<path class="st6" d="M180.6,271.4c52.6,68.7,130.1,64.2,130.1,64.2c88.3,0,164.2-73.7,160-181.1h-0.4c-7,94.2-78,157-159.5,157
@@ -121,21 +121,24 @@
         	<path class="st7" d="M138.8,269.9c10.9-6.2,18.7-11.2,28.8-18.7l-10-27.3c-3.3-14.5-7.6-34-7.6-49.9c0-89.6,71.6-162.2,160-162.2
         		s160,72.6,160,162.2S398.4,336.2,310,336.2c-36.8,0-64.8-10.9-94.2-29.7c0,0-16-9-35.5-34c-0.7-1-2.1-1.2-3.1-0.6
         		c-7.2,4.5-26.7,16.6-30.7,19.1"/>
-        	<path class="st8" d="M132.3,264.5c13.4-4.3,24.6-16.5,24.6-16.5c-1.4-3.3-5.5-12.5-6.7-16c-6.5-18.6-9.9-38.2-9.9-57.9
-        		C140.3,78.5,216.7,1,311,1s170.7,77.5,170.7,173S405.2,347,311,347c-43.9,0-79.9-14.5-111.2-41.8c-3.3-2.9-18.7-17.4-21.8-20.5
-        		c-1.3-1.3-3.1,0.2-3.1,0.2s-17.4,11-29.8,16.9"/>
-        	<path class="st9" d="M429.1,189.7c4.7,8.4,1.7,19-6.7,23.7c-7.3,4.1-16.4,2.4-21.8-3.9c4.7,8.4,15.3,11.5,23.7,6.9
-        		c8.4-4.7,11.5-15.3,6.9-23.7C430.6,191.6,429.9,190.6,429.1,189.7z"/>
-        	<path class="st9" d="M340.7,253.1c4.7,8.4,1.6,19.1-6.9,23.7c-7.2,4-16.2,2.4-21.6-3.9c4.7,8.4,15.3,11.5,23.7,6.9
-        		c8.4-4.7,11.5-15.3,6.9-23.7C342.3,255,341.6,254,340.7,253.1L340.7,253.1z"/>
-
-        		<ellipse transform="matrix(0.3699 -0.9291 0.9291 0.3699 -39.2581 470.9394)" class="st9" cx="327.6" cy="264.4" rx="17.5" ry="17.5"/>
-
-        		<ellipse transform="matrix(0.3699 -0.9291 0.9291 0.3699 75.2843 513.1525)" class="st9" cx="416" cy="201.1" rx="17.5" ry="17.5"/>
-
+          <path class="st8" d="M132.3,264.5c13.4-4.3,24.6-16.5,24.6-16.5c-1.4-3.3-5.5-12.5-6.7-16c-6.5-18.6-9.9-38.2-9.9-57.9
+          		C140.3,78.5,216.7,1,311,1s170.7,77.5,170.7,173S405.2,347,311,347c-43.9,0-79.9-14.5-111.2-41.8c-3.3-2.9-18.7-17.4-21.8-20.5
+          		c-1.3-1.3-3.1,0.2-3.1,0.2s-17.4,11-29.8,16.9"/>
+        	<g class="bubbles">
+            <path class="st9" d="M340.7,253.1c4.7,8.4,1.6,19.1-6.9,23.7c-7.2,4-16.2,2.4-21.6-3.9c4.7,8.4,15.3,11.5,23.7,6.9
+          		c8.4-4.7,11.5-15.3,6.9-23.7C342.3,255,341.6,254,340.7,253.1L340.7,253.1z"/>
+            <ellipse transform="matrix(0.3699 -0.9291 0.9291 0.3699 -39.2581 470.9394)" class="st9" cx="327.6" cy="264.4" rx="17.5" ry="17.5"/>
+        	</g>
+        	<g class="bubbles">
+            <path class="st9" d="M429.1,189.7c4.7,8.4,1.7,19-6.7,23.7c-7.3,4.1-16.4,2.4-21.8-3.9c4.7,8.4,15.3,11.5,23.7,6.9
+          		c8.4-4.7,11.5-15.3,6.9-23.7C430.6,191.6,429.9,190.6,429.1,189.7z"/>
+            <ellipse transform="matrix(0.3699 -0.9291 0.9291 0.3699 75.2843 513.1525)" class="st9" cx="416" cy="201.1" rx="17.5" ry="17.5"/>
+        	</g>
+        	<g class="bubbles">
+            <path class="st9" d="M238.6,209.8c4.7,8.4,1.7,19-6.7,23.7c-7.3,4.1-16.4,2.4-21.8-3.9c4.7,8.4,15.3,11.5,23.7,6.9
+          		s11.5-15.3,6.9-23.7C240.1,211.8,239.4,210.8,238.6,209.8L238.6,209.8z"/>
         		<ellipse transform="matrix(0.3699 -0.9291 0.9291 0.3699 -63.5028 348.7785)" class="st9" cx="225.4" cy="221.2" rx="17.5" ry="17.5"/>
-        	<path class="st9" d="M238.6,209.8c4.7,8.4,1.7,19-6.7,23.7c-7.3,4.1-16.4,2.4-21.8-3.9c4.7,8.4,15.3,11.5,23.7,6.9
-        		s11.5-15.3,6.9-23.7C240.1,211.8,239.4,210.8,238.6,209.8L238.6,209.8z"/>
+        	</g>
         </g>
         <g id="borders">
         	<path class="st10" d="M43.8,225.5 M42.3,225.4c-0.5,0.3,1-0.9,2-1.3c2.1-1.2,4.5-1.9,7-1.8c3.4,0.3,6.5,1.8,8.8,4.3
@@ -200,6 +203,15 @@
         	</g>
         </g>
       </svg>
+      <div id="droplets">
+        <svg version="1.1" id="droplet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+           viewBox="0 0 28.1 41.6" style="enable-background:new 0 0 28.1 41.6;" xml:space="preserve">
+          <path id="path2530_1_" class="st0" d="M27.4,27c0,7.7-6,14-13.4,14S0.5,34.7,0.6,27C0.8,16.7,8.1,12.5,14,0.6
+            C20.3,12.1,27.4,19.3,27.4,27L27.4,27z"/>
+          <path class="st1" d="M14.1,0.6c5.1,11.5,8.6,18.3,8.6,26S19,40.9,12.9,40.9c0.4,0,0.8,0.1,1.2,0.1c7.4,0,13.4-6.3,13.4-14
+            C27.4,19.3,20.3,12.1,14.1,0.6z"/>
+        </svg>
+      </div>
     </div>
     <Face></Face>
   </div>
@@ -215,9 +227,12 @@
        this.waterFront()
        this.water3dEffect()
        this.shadow()
+       this.waterCan()
+       this.bubbles()
+       this.droplet()
      },
      methods: {
-       waterFront: function () {
+       waterFront() {
          anime({
            targets: '#water-front',
            scale: [.9, 1],
@@ -228,7 +243,7 @@
            easing: 'linear'
          })
        },
-       water3dEffect: function () {
+       water3dEffect() {
          anime({
            targets: '#water-3d-effect',
            scale: [.9, 1],
@@ -239,7 +254,7 @@
            delay: 300
          })
        },
-       shadow: function () {
+       shadow() {
          anime({
            targets: '#shadow .top',
            rotateX: ['90deg', '0deg'],
@@ -247,6 +262,70 @@
            translateX: [-3, 0],
            duration: 7800,
            easing: 'linear'
+         })
+       },
+       waterCan() {
+         let d = 'M151.1,156.4c39.2,6.9,76.6-6.1,98.7,0.2c23.5,3.6,23.5,3.6,35.3,2.8c18.9-0.4,14.6-3.1,39.2-3.8c31.3,3.4,30.6,7.3,50.6,9.1c21.6,1.9,21.4,6.6,52.8-5.5c19.3-7.2,31.9,0.5,42.3-1.7c4.2,107.4-71.6,181.1-160,181.1c-114.4-8.5-160-78.2-160-181.1'
+         anime({
+           targets: '#can #water',
+           d: d,
+           direction: 'alternate',
+           loop: true,
+           duration: 2000,
+           easing: 'linear'
+         })
+       },
+       bubbles() {
+         anime({
+           targets: '#can .bubbles',
+           direction: 'alternate',
+           loop: true,
+           easing: 'linear',
+           duration(el, i, l) {
+             return 1000 + (anime.random(1000, 2500))
+           },
+           translateX(el, i, l) {
+             return anime.random(-15, 15)
+           },
+           translateY(el, i, l) {
+             return anime.random(-15, 15)
+           }
+         })
+       },
+       droplet() {
+         // Number of droplets
+         let d = 40
+         for (let i = 0; i < d-1; i++) {
+           document
+             .getElementById('droplets')
+             .appendChild(
+               document.getElementById('droplet')
+               .cloneNode(true)
+             )
+         }
+         anime({
+           targets: '#droplet',
+           rotate: [0, 20],
+           left: ['51%', '50%'],
+           translateX(el, i) {
+             return anime.random(10*Math.sqrt(i), 0)
+           },
+           opacity: 0,
+           bottom: ['46vh', '16vh'],
+           duration: 1200,
+           delay(el, i) {
+             return 500 + (200*i)
+           },
+           easing: 'easeInExpo'
+         })
+         anime({
+           targets: '#droplet',
+           opacity: [0, 1],
+           delay(el, i) {
+             return 1400 + (200*i)
+           },
+           duration: 1200,
+           direction: 'alternate'
          })
        }
      }
@@ -378,6 +457,26 @@
        fill none
        stroke #757575
        stroke-miterlimit 10
+   #droplet
+     position absolute
+     width 1vw
+     left 56.5%
+     bottom 49.5vh
+     z-index -3
+     transform-origin 50% 50%
+     transform-box fill-box
+     +below(1000px)
+       width 2vw
+     .st0
+       opacity 0.6985
+       fill #76B8FF
+       fill-opacity 0.526
+       enable-background new
+     .st1
+       opacity 0.6985
+       fill #9CB3CC
+       fill-opacity 0.526
+       enable-background new
 
 #halo
   position absolute
