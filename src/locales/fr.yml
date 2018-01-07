@@ -9,8 +9,14 @@ locales:
   fr: Français
   en: Anglais
 counter:
+  until: "Avant le"
+  untilQuote: "Avant l'"
   days: j
   hours: h
   minutes: m
   seconds: s
 about: Nous sommes un groupe d'étudiants en Multimédia et Internet, basé à Bordeaux et nous avons fait d'autres projets sympas. Si vous souhaitez en savoir plus sur notre travail, <a href="https://github.com/orgs/next-time/people" target="_blank">rendez-vous ici</a>.
+seasons:
+  spring: "Printemps"
+  summer: "Été"
+  winter: "Hiver"

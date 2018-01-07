@@ -11,8 +11,9 @@
       <em>{{ $t('counter.seconds') }}</em>
     </p>
     <div id="until">
-      <em>Until</em>
-      <b>{{ this.until }}</b>
+      <em v-if="this.quote && lang == 'fr'">{{ $t('counter.untilQuote') }}</em>
+      <em v-else>{{ $t('counter.until') }}</em>
+      <b>{{ $t(this.until) }}</b>
     </div>
   </div>
 </template>
@@ -36,6 +37,9 @@ export default {
     },
     color: {
       type: String
+    },
+    quote: {
+      type: Boolean
     }
   },
 
