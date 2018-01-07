@@ -20,7 +20,7 @@ export default {
     })
 
     router.beforeEach((to, from, next) => {
-      if (to.meta.title == null) {
+      if (to.meta.title == null || to.meta.title.lenght <= 0) {
         document.title = meta.title
       } else {
         document.title = to.meta.title + ' | ' + meta.title
