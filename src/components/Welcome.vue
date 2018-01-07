@@ -8,7 +8,13 @@
       <router-link to="/season/spring" class="bubble red">
         <img src="../assets/img/wraps/seasons/spring.svg" alt="Winter Wrap">
       </router-link>
-      <!-- <router-link to="/season/summer" class="bubble yellow"></router-link> -->
+      <router-link to="/season/summer" class="bubble blue">
+        <img src="../assets/img/wraps/seasons/summer.svg" alt="Winter Wrap">
+      </router-link>
+    </div>
+    <div id="lang">
+      <a href="#" @click="setLang('fr')" v-show="isLang('en')">🇫🇷</a>
+      <a href="#" @click="setLang('en')" v-show="isLang('fr')">🇺🇸</a>
     </div>
   </section>
 </template>
@@ -46,8 +52,8 @@ export default {}
       box-shadow 0 15px 15px 0 rgba(0, 0, 0, 0.06)
     &:nth-child(2)
       margin 0 4em
-    &.yellow
-      background-color #FCEED6;
+    &.blue
+      background-color #cbe0ed
     &.red
       background-color #FCE3DF
     &.green
@@ -70,4 +76,11 @@ export default {}
       width 25vw
       height 25vw
 
+  #lang
+    position absolute
+    bottom 1.7em
+    right 1.7em
+    a
+      margin 0 .25em
+      font-size 2.2em
 </style>

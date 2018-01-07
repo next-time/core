@@ -1,7 +1,7 @@
 <template>
   <div>
     <div id="container">
-      <p>{{ $t('about') }}</p>
+      <p v-html="$t('about')"></p>
     </div>
     <div id="background"></div>
   </div>
@@ -44,6 +44,7 @@ export default {
   p
     letter-spacing .13em
     font-family vision
+    line-height 1.4em
 #background
   position absolute
   z-index -1
