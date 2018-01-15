@@ -306,12 +306,11 @@
          anime({
            targets: '#droplet',
            rotate: [0, 20],
-           left: ['51%', '50%'],
+           left: ['50.5%', '50%'],
            translateX(el, i) {
              return anime.random(10*Math.sqrt(i), 0)
            },
-           opacity: 0,
-           bottom: ['46vh', '16vh'],
+           bottom: ['43vh', '16vh'],
            duration: 1200,
            delay(el, i) {
              return 500 + (200*i)
@@ -320,12 +319,11 @@
          })
          anime({
            targets: '#droplet',
-           opacity: [0, 1],
+           opacity: 0,
            delay(el, i) {
-             return 1400 + (200*i)
+             return 1600 + (200*i)
            },
-           duration: 1200,
-           direction: 'alternate'
+           duration: 1200
          })
        }
      }
@@ -465,7 +463,7 @@
      transform-origin 50% 50%
      transform-box fill-box
      +below(1000px)
-       width 2vw
+       width .7vw
      .st0
        opacity 0.6985
        fill #76B8FF
